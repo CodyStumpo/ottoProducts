@@ -50,3 +50,5 @@ svmPredProb <-attr(svmPredict, "probabilities")
 svmPPdf <- data.frame(svmPredProb)
 svmSub <- cbind(id, round(svmPPdf,3))
 write.csv(svmSub, file="svmSub.csv", row.names=FALSE)
+
+#scores 0.57361
